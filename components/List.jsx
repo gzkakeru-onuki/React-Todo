@@ -1,5 +1,7 @@
 const List = ({ todos, setTodos }) => {
   const handleComplete = (id) => {
+    console.log(`タスク ${id} が完了しました。`);
+    
     const updatedTodos = todos.filter(todo => todo.id !== id);
     setTodos(updatedTodos);
   };
